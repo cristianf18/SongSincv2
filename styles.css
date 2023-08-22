@@ -11,29 +11,25 @@
   z-index: -1; /* Place it behind other content */
 }
 
-#titleText  {
-  width: 100%; 
-  font-size: 25px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-weight: 1000;
-
+#titleImage {
+  height: 38px;
+  position:inherit;
+  z-index: 0;
 }
 
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#topSearch  {
+  position: fixed;
+  left: 10px;
+  z-index: 1;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 600px; 
-  overflow: hidden;
-  }
+::placeholder {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  font-weight: bold;
+}
+
 
   
