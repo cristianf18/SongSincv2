@@ -21,15 +21,17 @@
   <body>
 
     <div class="topBar">
-      <h1 id='titleText'>SongSinc</h1>
-      <img src="{{ url_for('static', filename='image/songsinctitle.png') }}" alt="please work">
+      <img src="{{ url_for('static', filename='image/songsinctitle.png') }}" alt="please work" id='titleImage'>
+      <div id='topSearch'>
+        <form>
+          <input type="text" name="lyrics" placeholder="Search lyrics">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
 
     <div class="container"> 
-     <form>
-        <input type="text" name="lyrics" placeholder="enter  lyrics">
-        <button type="submit">Submit</button>
-      </form>
+     
       
     </div> 
     {% block content %}
