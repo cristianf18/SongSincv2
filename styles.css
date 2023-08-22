@@ -1,0 +1,39 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 41px; /* This will cover the top third of the viewport */
+  background-color: rgb(255, 255, 100); /* Change this to your desired background color */
+  z-index: -1; /* Place it behind other content */
+}
+
+#titleText  {
+  width: 100%; 
+  font-size: 25px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 1000;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 600px; 
+  overflow: hidden;
+  }
+
+  
