@@ -22,6 +22,9 @@
 
     <div class="topBar">
       <img src="{{ url_for('static', filename='image/songsinctitle.png') }}" alt="please work" id='titleImage'>
+      <a href='https://genius.com/'>
+        <img src="{{ url_for('static', filename='image/geniuslogo.png') }}" alt="logo" id='logoImage' >
+      </a>
       <div id='topSearch'>
         <form>
           <input type="text" name="lyrics" placeholder="Search lyrics">
@@ -33,11 +36,11 @@
     <div class='blackBar'></div>
     <div class='FADE'>
       <div class='liveText'>
-        <h1>get this bread</h1>
+        <h1>Search for Aritist, Songs or Albums!</h1>
       </div>
     <div class="container"></div>
     <form>
-      <input type="text" class="invisible-input" placeholder="Type your lyrics here">
+      <input type="text" class="invisible-input" placeholder="Search for Aritist or Song">
       <button type='submit'>Yuh</button>
     </form>
       <div class="lyrics-container">
