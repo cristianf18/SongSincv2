@@ -6,9 +6,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 41px; /* This will cover the top third of the viewport */
-  background-color: rgb(255, 255, 100); /* Change this to your desired background color */
-  z-index: -1; /* Place it behind other content */
+  height: 41px; 
+  background-color: rgb(255, 255, 100); 
+  z-index: -1; 
 }
 
 #titleImage {
@@ -17,9 +17,17 @@
   z-index: 0;
 }
 
+#logoImage  {
+  height: 35px;
+  position:absolute;
+  z-index:1;
+  left: 10px;
+  top: 5px;
+}
+
 #topSearch  {
   position: absolute;
-  left: 5px;
+  left: 75px;
   z-index: 1;
 
 }
@@ -48,13 +56,12 @@
 }
 
 .liveText h1 {
-  position: static;
-  bottom: 40px;
+  position:relative;
   color: aliceblue;
   overflow: hidden; 
   border-right: .15em solid rgb(255, 255, 255); 
   white-space: nowrap; 
-  margin: 0 auto; 
+  top:150px;
   letter-spacing: .15em; 
   animation: 
     typing 7.5s steps(80, end),
