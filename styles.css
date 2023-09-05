@@ -39,47 +39,124 @@
   top:41px;
   z-index: 4;
   background-color: rgb(18, 18, 18);
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  background-image: linear-gradient(to right, rgb(18, 18, 18), rgb(255, 255, 100));
-
-  width: 100%; 
-  position: relative;
+.albums {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  text-align: center;
+  margin-top: 12.5px;
+  left:31.59%;
 }
 
+.songs {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-top: 12px;
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  margin-top: 12.5px;
+  left:41.15%;
+}
+
+.artists {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  left: 45%;
+  margin-top: 12.5px;
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  left:50%;
+
+}
+
+.charts {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-top: 12.5px;
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  left:59.5%;
+}
+
+/*
 .FADE  {
-  background-image: linear-gradient(rgb(18, 18, 18), rgb(255, 255, 100));
+  background: linear-gradient(rgb(18, 18, 18), rgb(255, 255, 100)); 
   height: 375px;
   width: 100%;
-  
+
 }
+
+.yellowBar  {
+  background: rgb(255, 255, 100);
+  width:100%;
+  height: 50px;
+  position:static;
+}
+*/
 
 .liveText h1 {
-  position:relative;
-  color: aliceblue;
   overflow: hidden; 
-  border-right: .15em solid rgb(255, 255, 255); 
-  white-space: nowrap; 
-  top:150px;
-  letter-spacing: .15em; 
-  animation: 
-    typing 7.5s steps(80, end),
-    blink-caret .75s step-end infinite;
+  top:500px;
   text-align: center;
+  border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  white-space: nowrap; 
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(40, end),
+    blink-caret .5s step-end infinite;
 }
 
-
+/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-
+/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(255, 255, 255); }
+  50% { border-color: orange; }
 }
+
+
+
+  
+  
+
 
 
 .invisible-input {
