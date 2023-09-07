@@ -149,7 +149,32 @@
   }
 }
 
-/*
+.invisible-input {
+  border: none; 
+  position:relative;
+  background-color: transparent; 
+  color: rgb(255, 255, 255);
+  font-size: 25px; 
+  top:200px;
+  border-bottom: 1px black;
+  outline: none;
+  z-index: 10;
+
+}
+
+.invisibleInput {
+  border:none;
+  position:relative;
+  background-color: transparent;
+  color: black;
+  font-size:40px;
+  border-bottom: 5px solid black;
+  padding: 5px;
+  outline:none;
+  z-index:10;
+
+}
+
 ::placeholder {
   font-weight: bold;
 }
@@ -157,5 +182,5 @@
 input[type="text"] {
   font-weight: bold;
 }
-/*
+
 
