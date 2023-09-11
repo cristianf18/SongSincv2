@@ -32,24 +32,36 @@
         </form>
       </div>
     </div>
+    
 
     <div class='blackBar'>
       <span font-weight="normal" class="albums">ALBUMS</span>
       <span font-weight="normal" class="songs">SONGS</span>
       <span font-weight="normal" class="artists">ARTISTS</span>
       <span font-weight="normal" class="charts">CHARTS</span>
-
     </div>
-    <div class='FADE'>
-      <div class='liveText'>
-        <h1>Search for Aritist, Songs or Albums!</h1>
+    <img src="{{ url_for('static', filename='image/oliviafront2.png') }}" alt="please work" class=overlay-image>
+
+    <div class='smallContainer'>
+      <div class="news">
+        <span class="newsHeader">NEWS</span>
+        <span class="horizontal-line"></span>
       </div>
-      <form>
-        <input type="text" class="invisible-input" placeholder="Search for Aritist or Song">
+      <h1 class='liveText1'>
+        <span class="typing-text">Search for songs,</span>
+      <h1 class='liveText1'>
+        <span class="typing-text">artists, or</span>
+      <h1 class='liveText1'>
+        <span class="typing-text">albums</span>
+    </div>
+
+    <div class="biggerBlackBar">
+      <form class="invisible-input">
+        <input type="text" class = "invisibleInput">
         <button type='submit'>Yuh</button>
-      </form>
-    </div> 
-    <div class='yellowBar'>
+      </form>   
+    </div>
+    
 
     {% block content %}
     
