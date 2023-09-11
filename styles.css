@@ -111,27 +111,72 @@
   left:59.5%;
 }
 
+
+
 .smallContainer {
-  height: 100px;
-  width:800px;
-  place-items: center;
-  margin-left: 25%;
-  margin-right: 80%;
-  display: grid; /*makes it text in the center!!*/
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 175px;
 }
 
-.liveText {
-  text-align: center;
+.overlay-image {
+  position: absolute;
+  width: 665px;
+  height: auto;
+  right: 165px; /* Adjust as needed */
+  top:155px; /* Adjust as needed */
+  background-position: center center;
+}
+/*
+.olivia {
   position: relative;
+  background-position: center center;
+  padding-bottom: 56.25%;
+  background-color: rgb(233, 233, 233);
+  background-repeat: repeat-x;
+  background-size: auto calc(100% + 1px);
+  background-image: url();
+}
+*/
+.news {
+  position: absolute;
+  top: 240px;
+}
+.newsHeader  {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.horizontal-line {
+  display: inline-block;
+  width: 300px; /* Adjust the width as needed */
+  height: 2px; /* Adjust the height as needed */
+  background-color: black;
+  margin-left: 10px; /* Adjust the margin-left to control the spacing between "NEWS" and the line */
+  margin-bottom: 3px;
+}
+
+
+
+
+.liveText1  {
+  position: relative;
+  color: rgb(0, 0, 0);
   animation: typing 3s steps(22), blink .4s step-end infinite alternate;
-  white-space: nowrap;
+  white-space:nowrap;
   letter-spacing: 4px;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 4em;
-  font-weight: 500;
-  top:90px
+  font-family:Programme, Arial, sans-serif;
+  line-height: 1.45;;
+  font-size: 35px;
+  font-weight: 400;
+  top:60px
 }
 
 @keyframes typing {
@@ -149,14 +194,23 @@
   }
 }
 
+.biggerBlackBar {
+  width: 100%;
+  position: absolute;
+  height: 200px;
+  left: 0px;
+  background-color: black;
+  top: 550px;
+}
+
 .invisible-input {
   border: none; 
   position:relative;
   background-color: transparent; 
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 25px; 
-  top:200px;
-  border-bottom: 1px black;
+
+  border-bottom: 1px rgb(255, 255, 255);
   outline: none;
   z-index: 10;
 
@@ -166,9 +220,9 @@
   border:none;
   position:relative;
   background-color: transparent;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size:40px;
-  border-bottom: 5px solid black;
+  border-bottom: 4px solid rgb(247, 247, 247);
   padding: 5px;
   outline:none;
   z-index:10;
