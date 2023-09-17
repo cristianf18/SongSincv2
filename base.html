@@ -1,71 +1,35 @@
+<!-- templates/base_lyrics.html -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>SongSinc</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      crossorigin="anonymous"
-    />
+<html>
+<head>
+    
+    <title>{{ songName }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/songs.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-  </head>
-  <body>
-
-    <div class="topBar">
-      <img src="{{ url_for('static', filename='image/songsinctitle.png') }}" alt="please work" id='titleImage'>
-      <a href='https://genius.com/'>
-        <img src="{{ url_for('static', filename='image/geniuslogo.png') }}" alt="logo" id='logoImage' >
-      </a>
-      <div id='topSearch'>
-        <form>
-          <input type="text" name="lyrics" placeholder="Search lyrics">
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+</head>
+<body>
+    <div class='header'>
+        <div class="headerText">
+            <a href='https://genius.com/'>
+                <img src="{{ url_for('static', filename='image/geniuslogo.png') }}" alt="logo" class='logo' >
+            </a>
+            
+            <h1 class='songnamee'>{{ songName }} - {{artistName}}</h1>
+        </div>
     </div>
-    
-
-    <div class='blackBar'>
-      <span font-weight="normal" class="albums">ALBUMS</span>
-      <span font-weight="normal" class="songs">SONGS</span>
-      <span font-weight="normal" class="artists">ARTISTS</span>
-      <span font-weight="normal" class="charts">CHARTS</span>
+    <div class="space"></div>
+    <div class="transitionBody">
+        <img class= 'artistPic' src="{{imageURL}}" alt="artistImage">
+            <h1 class="songtitleName">{{songName}}</h1>
+            <div class='textDiv'>
+                <h2>by {{artistName}} </h2>
+            </div>
     </div>
-    <img src="{{ url_for('static', filename='image/oliviafront2.png') }}" alt="please work" class=overlay-image>
-
-    <div class='smallContainer'>
-      <div class="news">
-        <span class="newsHeader">NEWS</span>
-        <span class="horizontal-line"></span>
-      </div>
-      <h1 class='liveText1'>
-        <span class="typing-text">Search for songs,</span>
-      <h1 class='liveText1'>
-        <span class="typing-text">artists, or</span>
-      <h1 class='liveText1'>
-        <span class="typing-text">albums</span>
+    <div class='transition'>
     </div>
-
-    <div class="biggerBlackBar">
-      <form class="invisible-input">
-        <input type="text" class = "invisibleInput">
-        <button type='submit'>Yuh</button>
-      </form>   
+    <div class='lyricsBody'>
     </div>
-    
-
-    {% block content %}
-    
-    {% endblock %}
-    
-  </body>
+</body>
 </html>
