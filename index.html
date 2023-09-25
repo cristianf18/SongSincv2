@@ -37,7 +37,7 @@
     <div class='blackBar'>
       <span font-weight="normal" class="albums">ALBUMS</span>
       <span font-weight="normal" class="songs">SONGS</span>
-      <span font-weight="normal" class="artists">ARTISTS</span>
+      <span font-weight="normal" class="artists"><a href="{{ url_for('artists') }}">ARTISTS</a></span>     
       <span font-weight="normal" class="charts">CHARTS</span>
     </div>
     <img src="{{ url_for('static', filename='image/oliviafront2.png') }}" alt="please work" class=overlay-image>
@@ -68,25 +68,53 @@
 
     
     <div class='secondContainer'>
-      <div class='Box artistsBox' >
-        <h1 class='niceText text-container'>Artists</h1>
-          <p class='doja'>Doja Cat</p>
+      <h1 class='featured'>FEATURED/FAVORITES</h1>
+      <div class='Box artistsBox'>
+        <div class="text-box niceText">
+          Songs
+        </div>
+          <p class='featuredAll'>VAMPIRE</p>
+          <p class='featuredAll'>MELTDOWN</p>
+          <p class='featuredAll'>Nights</p>
+          <p class='featuredAll'>deja vu</p>
+          <p class='featuredAll'>Sunshine</p>
+          <p class='featuredAll'>Paint the Town Red</p>
+          <p class='featuredAll'>making the bed</p>
+          <p class='featuredAll'>pretty isn't pretty</p>
       </div>
 
       <div class='Box chartsBox'>
-        <h1 class='niceText text-container'>Charts</h1>
-        <div id="song_link" data-song-name="Nights">
-          <p class='doja'>Nights</p>
+        <div class="text-box niceText">
+          Albums
         </div>
+          <p class='featuredAll'>Blonde</p>
+          <p class='featuredAll'>GUTS</p>
+          <p class='featuredAll'>SOS</p>
+          <p class='featuredAll'>ASTROWORLD</p>
+          <p class='featuredAll'>to hell with it</p>
+          <p class='featuredAll'>SOUR</p>
+          <p class='featuredAll'>UTOPIA</p>
+          <p class='featuredAll'>Channel Orange</p>
       </div>
 
       <div class='Box songsBox'>
-        <h1 class='niceText  text-container'>Songs</h1>
-        <p class='doja'>deja vu</p>
+        <div class="text-box niceText">
+          Songs
+        </div>
+          <p class='featuredAll'>VAMPIRE</p>
+          <p class='featuredAll'>GUTS</p>
+          <p class='featuredAll'>Sunshine</p>
+          <p class='featuredAll'>CAROUSEL</p>
+          <p class='featuredAll'>to hell with it</p>
+          <p class='featuredAll'>Ivy</p>
+          <p class='featuredAll'>deja vu</p>
+          <p class='featuredAll'>Mercury</p>
       </div>
 
       <div class="Box albumsBox">
-        <h1 class="niceText text-container">Albums</h1>
+        <div class="text-box niceText">
+          Albums
+        </div>
         <p class='doja'>Blonde</p>
       </div>
     
