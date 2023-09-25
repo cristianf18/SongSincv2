@@ -124,8 +124,8 @@
   position: absolute;
   width: 665px;
   height: auto;
-  right: 165px; /* Adjust as needed */
-  top:155px; /* Adjust as needed */
+  right: 165px; 
+  top:155px; 
   background-position: center center;
 }
 /*
@@ -154,10 +154,10 @@
 
 .horizontal-line {
   display: inline-block;
-  width: 300px; /* Adjust the width as needed */
-  height: 2px; /* Adjust the height as needed */
+  width: 300px; 
+  height: 2px; 
   background-color: black;
-  margin-left: 10px; /* Adjust the margin-left to control the spacing between "NEWS" and the line */
+  margin-left: 10px; 
   margin-bottom: 3px;
 }
 
@@ -246,30 +246,41 @@ input[type="text"] {
   height: 600px;
   position: absolute;
   top:840px;
+  display:grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.featured {
+  position: absolute;
+  font-family:Programme, Arial, sans-serif; 
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-align: center;
+  left: 50%; 
+  transform: translateX(-50%);
+  top:10px;
 }
 
 .Box  {
   position: absolute;
   text-align: center;
-  width: 20%;
-  height: 300px;
-
   border-style: solid;
   border-color: black;
-
   padding: 10px;
-  top:20px;
+  top:100px;
 }
 
 .chartsBox {
   position: absolute;
-  left: 50%; /* Set left to 50% to center horizontally */
+  left: 50%; 
   transform: translateX(-50%); 
 }
 
 .artistsBox {
   position: absolute;
-  left: 10%; /* Set left to 50% to center horizontally */
+  left: 10%; 
   transform: translateX(-10%); 
 }
 
@@ -294,22 +305,38 @@ input[type="text"] {
 
 .albumsBox  {
   position: absolute;
-  left: 50%; /* Set left to 50% to center horizontally */
+  left: 50%; 
   transform: translateX(-50%); 
   top:350px
+}
+
+.featuredAll {
+  margin-top: 10px; /* Add a margin to separate the lines vertically */
+  line-height: .75; /* Adjust the line-height value as needed */
+  font-weight: 700;
+  font-family:Programme, Arial, sans-serif;
 }
 
 .niceText {
   font-family:Programme, Arial, sans-serif;
   font-size: .8em;
   font-weight: 900;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+  border-bottom: black solid 3px;
+  padding-bottom: 3px;
+  
+}
+
+.text-box {
+  width: auto; /* Adjust width automatically based on content */
+  height: auto; /* Adjust height automatically based on content */
+  /* Add any other styling as needed */
 }
 
 .text-container {
-  padding-bottom: 1px; /* Adjust the padding as needed */
+  padding-bottom: 1px; 
   position: absolute;
-  border-bottom: 3px solid black; /* Set the border style and color */
+  border-bottom: 3px solid black; 
   width: 30%;
   left: 100px;
  
