@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <meta charset="UTF-8">
     <title>{{ songName }}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/songs.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -30,6 +30,11 @@
     <div class='transition'>
     </div>
     <div class='lyricsBody'>
+        <div class='actualLyrics'>
+            {% for line in songLyrics %}
+                <p class='lyrics-line'>{{ line }}</p>
+            {% endfor %}
+        </div>
     </div>
 </body>
 </html>
